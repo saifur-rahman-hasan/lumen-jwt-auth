@@ -29,6 +29,7 @@ Route::group([
 
 ], function () {
 
+    Route::post('register', 'RegisterController@register');
     Route::post('login', 'AuthController@login');
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
